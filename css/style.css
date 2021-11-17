@@ -169,24 +169,26 @@ main {
   width: 100%;
   text-align: center;
   color: white;
-  margin: 5px 0;
+  margin: 5px 180px;
+  display: flex;
+  align-items: center;
 }
 
 .mid-nav-icons span {
   width: 100%;
   height: 100%;
-  padding: 0 10px;
+  padding: 0px 5px;
   vertical-align: middle;
 }
 
 .fa-play-circle {
   font-size: 30px;
-  margin: 10px;
+  margin: 9px 20px;
 }
 
 .fa-play-circle:hover {
   font-size: 32px;
-  margin: 9px;
+  margin: 8px 19px;
 }
 
 [class*="fa-caret"] {
@@ -197,37 +199,34 @@ main {
   width: 100%;
 }
 
-.line {
+/* .line {
   width: 2px;
   height: 14px;
   background-color: white;
-  top: -2.5px;
-  left: 10px;
+  top: 6px;
+  left: 11px;
 }
 
 .line-right {
   width: 2px;
   height: 14px;
   background-color: white;
-  top: -2.5px;
-  left: 17px;
-}
+  top: 6px;
+  left: 20px;
+} */
 
-.time-container {
-  width: 100%;
-  height: 100%;
+.time-1 {
+  bottom: 12px;
+  left: -10px;
   font-size: 12px;
   color: white;
 }
 
-.time-1 {
-  top: -5px;
-  left: -15px;
-}
-
 .time-2 {
-  right: -15px;
-  top: -5px;
+  right: -10px;
+  bottom: 12px;
+  font-size: 12px;
+  color: white;
 }
 
 .volume-bar-mid {
