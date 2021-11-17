@@ -66,6 +66,7 @@ footer {
 .container {
   height: calc(100vh - 75px);
   width: 100%;
+  overflow-y: scroll;
 }
 
 /* Macro 1 */
@@ -81,9 +82,8 @@ footer {
 .macro-2 {
   background-color: #141922;
   width: calc(100% - 200px);
-  height: 100vh;
+  height: 1500px;
   right: 0;
-  overflow-y: scroll;
 }
 
 .upgrade-button-header {
