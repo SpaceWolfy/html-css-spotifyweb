@@ -40,7 +40,7 @@ main {
   height: 100vh;
   width: 100%;
 }
-
+/* Footer */
 .pagefooter {
   height: 75px;
   width: 100%;
@@ -69,6 +69,7 @@ main {
   flex-shrink: 2;
   width: 400px;
 }
+/*  */
 
 .upgrade-button {
   right: 25px;
@@ -78,6 +79,10 @@ main {
   font-size: 11px;
   top: 18px;
   z-index: 3;
+}
+
+.upgrade-button:hover {
+  font-size: 12px;
 }
 
 .upgrade-button > a {
@@ -235,6 +240,7 @@ main {
   font-weight: bold;
   color: #fff;
 }
+
 /*  */
 
 /* Macro 2 */
@@ -319,5 +325,26 @@ main {
 
   .macro-2 {
     width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .sidebar {
+    overflow-y: scroll;
+  }
+
+  .macro-1-footer {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  .sidebar {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .macro-1-footer {
+    display: none;
   }
 }
