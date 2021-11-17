@@ -64,6 +64,7 @@ main {
   height: 100%;
   display: flex;
   align-items: center;
+  align-content: space-between;
 }
 
 /* Left-nav */
@@ -151,6 +152,7 @@ main {
 
 /* Mid-nav */
 .mid-nav {
+  margin: 0 50px;
   flex-shrink: 2;
   width: 30%;
   height: 100%;
