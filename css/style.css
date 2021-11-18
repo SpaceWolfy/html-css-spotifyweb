@@ -41,6 +41,21 @@ a {
   background-color: black;
 }
 
+.text {
+  margin-left: 25px;
+}
+.text > div {
+  color: #7d7f84;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.recent-title {
+  color: #fff;
+  font-size: 23px;
+}
+
 .main-page-album {
   width: calc(100% - 200px);
   height: 100%;
@@ -49,12 +64,51 @@ a {
   padding-top: 80px;
 }
 
-.album {
-  width: 170px;
-  height: 170px;
+.album-container {
+  margin: 30px 25px;
+}
+
+.prima-sezione {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .album {
+  min-width: 150px;
+  min-height: 150px;
+  width: 12%;
+  padding-bottom: 12%;
   background-color: crimson;
-  margin: 30px 15px;
-  justify-self: flex-start;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 4%;
+} */
+
+.album-info {
+  margin-right: 4%;
+}
+
+.album {
+  width: 200px;
+  height: 200px;
+  background-color: crimson;
+  background-size: cover;
+}
+
+.album-text {
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.album-text > div {
+  color: #7d7f84;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.circle {
+  border-radius: 50%;
 }
 
 .header-upgrade {
@@ -415,6 +469,48 @@ a {
 /*  */
 /*  */
 
+/* Backgrounds */
+.one {
+  background-image: url("../img/metal_lifting.jpg");
+}
+
+.two {
+  background-image: url("../img/stranger.jpeg");
+}
+
+.three {
+  background-image: url("../img/aquietplace.jpeg");
+}
+
+.four {
+  background-image: url("../img/split.jpeg");
+}
+
+.five {
+  background-image: url("../img/cure.jpeg");
+}
+
+.six {
+  background-image: url("../img/sinister.jpeg");
+}
+
+.seven {
+  background-image: url("../img/radar.jpeg");
+}
+
+.eight {
+  background-image: url("../img/mixdaily.jpeg");
+}
+
+.nine {
+  background-image: url("../img/youg.jpeg");
+}
+
+.ten {
+  background-image: url("../img/einaudi.jpeg");
+}
+/*  */
+
 /* MediaQuery */
 @media screen and (min-width: 320px) and (max-width: 575px) {
   .sidebar {
@@ -485,6 +581,11 @@ a {
   .header-upgrade {
     width: calc(100% - 50px);
   }
+
+  .album {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 610px) {
@@ -501,6 +602,13 @@ a {
   .mid-icons {
     color: white;
     padding: 0 5px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  .album {
+    width: 120px;
+    height: 120px;
   }
 }
 /*  */
