@@ -15,41 +15,38 @@
     <title>Stopify</title>
   </head>
   <body>
-    <main class="pr">
-      <header>
-        <div class="upgrade-button pf">
-          <a href="#">EFFETTUA L'UPGRADE</a>
+    <div class="container-top-page">
+      <div class="sidebar">
+        <div class="logo-container">
+          <img src="img/logo.svg" alt="logo spotify" />
+          <img class="logo-nascosto" src="img/logo-small.svg" alt="" />
         </div>
-      </header>
 
-      <div class="container pr">
-        <div class="macro-1 pf">
-          <div class="logo-container">
-            <img src="img/logo.svg" alt="logo spotify" />
-            <img class="logo-nascosto" src="img/logo-small.svg" alt="" />
-          </div>
-          <nav class="sidebar">
-            <div class="row">
-              <div class="column fl">
-                <img class="sidebar-icon" src="img/home.svg" alt="" />
-                <span> Home</span>
-              </div>
-              <div class="column fl">
-                <img class="sidebar-icon" src="img/search.svg" alt="" />
-                <span> Cerca</span>
-              </div>
-              <div class="column fl">
-                <img class="sidebar-icon" src="img/libreria.svg" alt="" />
-                <span> La tua libreria</span>
-              </div>
-              <div class="playlist-container fl">
-                <div class="new-playlist">
-                  <h5>PLAYLIST</h5>
-                  <div>
-                    <i class="fas fa-plus-square"></i>
-                    <span> Crea Playlist </span>
-                  </div>
+        <nav class="navbar">
+          <div class="row">
+            <div class="column fl">
+              <img class="sidebar-icon" src="img/home.svg" alt="" />
+              <span> Home</span>
+            </div>
+
+            <div class="column fl">
+              <img class="sidebar-icon" src="img/search.svg" alt="" />
+              <span> Cerca</span>
+            </div>
+            <div class="column fl">
+              <img class="sidebar-icon" src="img/libreria.svg" alt="" />
+              <span> La tua libreria</span>
+            </div>
+
+            <div class="playlist-container fl">
+              <div class="new-playlist">
+                <h5>PLAYLIST</h5>
+                <div>
+                  <i class="fas fa-plus-square"></i>
+                  <span> Crea Playlist </span>
                 </div>
+              </div>
+              <div class="play-scroll">
                 <div class="existent-playlist">
                   <div class="playlist-name">Nome Playlist</div>
                   <div class="playlist-name">Nome Playlist</div>
@@ -61,37 +58,54 @@
                 </div>
               </div>
             </div>
-          </nav>
-          <footer>
-            <div class="macro-1-footer pa">
-              <div>
-                <img
-                  class="footer-macro-1-icon"
-                  src="img/download.svg"
-                  alt=""
-                />
-                <span> Installa app </span>
-              </div>
+          </div>
+        </nav>
 
-              <div class="pr">
-                <div class="image-profile">
-                  <img src="img/profile.svg" alt="" />
-                </div>
-                <span>John Doe</span>
-              </div>
+        <footer>
+          <div class="macro-1-footer pa">
+            <div>
+              <img class="footer-macro-1-icon" src="img/download.svg" alt="" />
+              <span> Installa app </span>
             </div>
-          </footer>
-        </div>
 
-        <div class="macro-2 pa">
-          <header class="upgrade-button-header pf"></header>
-        </div>
+            <div class="pr">
+              <div class="image-profile">
+                <img src="img/profile.svg" alt="" />
+              </div>
+              <span>John Doe</span>
+            </div>
+          </div>
+        </footer>
       </div>
 
-      <footer class="pf pagefooter">
-        <nav class="footer-nav">
-          <div class="left-nav">
-            <div class="song-img"><img src="img/sinister.jpeg" alt="" /></div>
+      <div class="main-page-album">
+        <div class="header-upgrade pr">
+          <div class="upgrade-button pa">
+            <a href="#">EFFETTUA L'UPGRADE</a>
+          </div>
+        </div>
+
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+        <div class="album"></div>
+      </div>
+    </div>
+
+    <footer class="music-commands">
+
+      <div class="left-footer">
+        <div class="song-img"><img src="img/sinister.jpeg" alt="" /></div>
             <div class="text-left-nav">
               <h6>Sinister</h6>
               <div>Brano nome</div>
@@ -102,47 +116,45 @@
               <span><i class="far fa-folder"></i></span>
             </div>
           </div>
-          <div class="mid-nav">
-            <div class="mid-nav-container pr">
-              <div class="mid-nav-icons">
-                <span class="mid-icons"><i class="fas fa-random"></i></span>
-                <span class="mid-icons pr">
-                  <i class="fas fa-caret-left"></i>
-                  <div class="line pa"></div>
-                </span>
-                <span class="mid-icons">
-                  <i class="far fa-play-circle"></i>
-                </span>
-                <span class="mid-icons pr">
-                  <i class="fas fa-caret-right"></i>
-                  <div class="line-right pa"></div>
-                </span>
-                <span class="mid-icons"><i class="fas fa-redo"></i> </span>
-              </div>
-              <div>
-                <div class="time-1 pa">0:25</div>
-                <div class="time-2 pa">4:35</div>
-              </div>
-              <div class="volume-bar-mid pr">
-                <div class="volume-mid pa"></div>
-                <div class="volume-ball-mid pa"></div>
-              </div>
-            </div>
-          </div>
-          <div class="right-nav">
-            <div class="right-nav-icons">
-              <span><i class="fas fa-list-ul"></i></span>
-              <span><i class="fas fa-desktop"></i></span>
-              <span><i class="fas fa-volume-up"></i></span>
-            </div>
+      </div>
 
-            <div class="volume-bar pr">
-              <div class="volume pa"></div>
-              <div class="volume-ball pa"></div>
-            </div>
+      <div class="mid-footer">
+        <div class="icon-container">
+          <span class="mid-icons"><i class="fas fa-random"></i></span>
+          <span class="mid-icons">
+            <i class="fas fa-caret-left"></i>
+          </span>
+          <span class="mid-icons">
+            <i class="far fa-play-circle"></i>
+          </span>
+          <span class="mid-icons">
+            <i class="fas fa-caret-right"></i>
+          </span>
+          <span class="mid-icons"><i class="fas fa-redo"></i></span>
+        </div>
+
+        <div class="volume-container">
+          <div class="tempo">0:05</div>
+          <div class="volume-bar-mid pr">
+            <div class="volume pa"></div>
+            <div class="volume-ball pa"></div>
           </div>
-        </nav>
-      </footer>
-    </main>
+          <div class="tempo">4:35</div>
+        </div>
+      </div>
+
+      <div class="right-footer">
+        <div class="right-nav-icons">
+          <span><i class="fas fa-list-ul"></i></span>
+          <span><i class="fas fa-desktop"></i></span>
+          <span><i class="fas fa-volume-up"></i></span>
+        </div>
+
+        <div class="volume-bar pr">
+          <div class="volume pa"></div>
+          <div class="volume-ball pa"></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
