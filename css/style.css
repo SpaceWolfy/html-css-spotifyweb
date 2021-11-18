@@ -33,6 +33,7 @@ a {
 .container-top-page {
   height: calc(100vh - 75px);
   display: flex;
+  overflow: hidden;
 }
 
 .sidebar {
@@ -91,14 +92,30 @@ a {
 .album {
   width: 200px;
   height: 200px;
-  background-color: crimson;
   background-size: cover;
+  transition: 0.5s;
+}
+
+.album .mid-icons:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.album .mid-icons {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0);
+}
+
+.album .fa-play-circle {
+  font-size: 70px;
 }
 
 .album-text {
   margin-top: 10px;
   color: #fff;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .album-text > div {
@@ -452,13 +469,13 @@ a {
   transition: 0.5s;
 }
 
-.fa-play-circle {
+.mid-footer .fa-play-circle {
   font-size: 30px;
   margin: 9px 20px;
   transition: 0.5s;
 }
 
-.fa-play-circle:hover {
+.mid-footer .fa-play-circle:hover {
   font-size: 32px;
   margin: 8px 19px;
 }
@@ -474,40 +491,110 @@ a {
   background-image: url("../img/metal_lifting.jpg");
 }
 
+.one:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/metal_lifting.jpg");
+  background-size: cover;
+  display: inline-block;
+}
+
 .two {
   background-image: url("../img/stranger.jpeg");
+}
+
+.two:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/stranger.jpeg");
+  background-size: cover;
+  display: inline-block;
 }
 
 .three {
   background-image: url("../img/aquietplace.jpeg");
 }
 
+.three:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/aquietplace.jpeg");
+  background-size: cover;
+  display: inline-block;
+}
+
 .four {
   background-image: url("../img/split.jpeg");
+}
+
+.four:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/split.jpeg");
+  background-size: cover;
+  display: inline-block;
 }
 
 .five {
   background-image: url("../img/cure.jpeg");
 }
 
+.five:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/cure.jpeg");
+  background-size: cover;
+  display: inline-block;
+}
+
 .six {
   background-image: url("../img/sinister.jpeg");
+}
+
+.six:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/sinister.jpeg");
+  background-size: cover;
+  display: inline-block;
 }
 
 .seven {
   background-image: url("../img/radar.jpeg");
 }
 
+.seven:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/radar.jpeg");
+  background-size: cover;
+  display: inline-block;
+}
+
 .eight {
   background-image: url("../img/mixdaily.jpeg");
+}
+
+.eight:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/mixdaily.jpeg");
+  background-size: cover;
+  display: inline-block;
 }
 
 .nine {
   background-image: url("../img/youg.jpeg");
 }
 
+.nine:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/youg.jpeg");
+  background-size: cover;
+  display: inline-block;
+}
+
 .ten {
   background-image: url("../img/einaudi.jpeg");
+}
+
+.ten:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/einaudi.jpeg");
+  background-size: cover;
+  display: inline-block;
 }
 /*  */
 
@@ -583,8 +670,12 @@ a {
   }
 
   .album {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .album-text {
+    margin-bottom: 10px;
   }
 }
 
@@ -609,6 +700,10 @@ a {
   .album {
     width: 120px;
     height: 120px;
+  }
+
+  .album-text {
+    margin-bottom: 10px;
   }
 }
 /*  */
