@@ -118,6 +118,10 @@ a {
   margin-bottom: 5px;
 }
 
+.stranger {
+  width: 200px;
+}
+
 .album-text > div {
   color: #7d7f84;
   margin-top: 10px;
@@ -197,11 +201,13 @@ a {
 }
 
 .playlist-container {
+  height: 100%;
   padding: 8px 18px;
   color: #616161;
 }
 
 .playlist-container .new-playlist > h5 {
+  height: 100%;
   padding-bottom: 8px;
   color: #fff;
   font-size: 12px;
@@ -228,7 +234,12 @@ a {
   padding-top: 18px;
 }
 
+.play-scroll {
+  height: 200px;
+}
+
 .playlist-name {
+  /* height: 20px; */
   width: 100%;
   color: #616161;
   padding-bottom: 18px;
@@ -677,6 +688,10 @@ a {
   .album-text {
     margin-bottom: 10px;
   }
+
+  .stranger {
+    width: 180px;
+  }
 }
 
 @media screen and (max-width: 610px) {
@@ -704,6 +719,24 @@ a {
 
   .album-text {
     margin-bottom: 10px;
+  }
+
+  .stranger {
+    width: 120px;
+  }
+}
+
+@media screen and (max-height: 615px) {
+  .macro-1-footer {
+    display: none;
+  }
+
+  .existent-playlist {
+    height: 800px;
+  }
+
+  .play-scroll {
+    overflow-y: scroll;
   }
 }
 /*  */
