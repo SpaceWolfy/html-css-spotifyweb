@@ -680,12 +680,12 @@ a {
 }
 
 @media screen and (max-width: 610px) {
-  .fa-play-circle {
+  .mid-footer .fa-play-circle {
     font-size: 30px;
     margin: 9px 5px;
   }
 
-  .fa-play-circle:hover {
+  .mid-footer .fa-play-circle:hover {
     font-size: 32px;
     margin: 8px 4px;
   }
