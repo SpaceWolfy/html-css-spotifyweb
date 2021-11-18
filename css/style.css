@@ -50,16 +50,17 @@ a {
 }
 
 .album {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
   background-color: crimson;
-  margin: 15px;
+  margin: 30px 15px;
+  justify-self: flex-start;
 }
 
 .header-upgrade {
   position: fixed;
   height: 80px;
-  width: 100%;
+  width: calc(100% - 200px);
   background-color: rgba(8, 11, 18, 0.5);
   top: 0;
 }
@@ -71,7 +72,7 @@ a {
   width: 200px;
   text-align: center;
   padding: 10px 0;
-  right: 220px;
+  right: 22px;
   top: 18px;
 }
 
@@ -220,6 +221,34 @@ a {
   font-size: 13px;
   font-weight: bold;
   color: #fff;
+}
+/*  */
+
+/* Main */
+.categorie {
+  padding: 15px 5px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #7d7f84;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categorie > div {
+  margin: 10px;
+}
+.evidenziatore {
+  margin: 4px 30px;
+  background-color: yellowgreen;
+  width: 20px;
+  height: 2px;
+  border: 0;
+}
+
+.categorie > div:hover {
+  color: white;
 }
 /*  */
 
@@ -412,10 +441,6 @@ a {
     cursor: pointer;
   }
 
-  .upgrade-button {
-    right: 65px;
-  }
-
   .image-profile {
     position: absolute;
     background-color: #808080;
@@ -456,11 +481,9 @@ a {
   .main-page-album {
     width: calc(100% - 50px);
   }
-}
 
-@media screen and (max-height: 600px) {
-  .macro-1-footer {
-    display: none;
+  .header-upgrade {
+    width: calc(100% - 50px);
   }
 }
 
